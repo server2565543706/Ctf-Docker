@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+  pwn:
+    build: .
+    image: 2565543706/nzctf-pwn-2
+    restart: always
+    ports:
+      - "9001:80" #这里写端口
+    environment:
+      - GZCTF_FLAG=flag{Sdcit-UL8FwU74xjENFrqpsHQcsZ2w7lg1kTZ0UvhB4BKV-2023wxb} #这里写FLAGG
