@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  misc:
+    build: .
+    image: 2565543706/nzctf-misc-1
+    restart: always
+    ports:
+      - "6335:80"
+  environment:
+      - GZCTF_FLAG=flag{kfccrazythursdayvme50}

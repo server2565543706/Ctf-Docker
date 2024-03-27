@@ -70,7 +70,7 @@ def handle_client(client_socket, addr):
 
 def main():
     host = '0.0.0.0'
-    port = 6335
+    port = 80
 
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
